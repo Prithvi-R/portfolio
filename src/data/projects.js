@@ -31,10 +31,10 @@ export const projectCategories = [
         role: "Lead Hardware-Software Developer, guided by Dr. Surajit Panja, IIIT Guwahati.",
         stack: ["ROS2", "Python", "FireBird VI Robots", "Graph Theory", "Decentralized Consensus", "LiDAR/IR sensors"],
         images: [
-          "../images/hardware/img1.webp",
-          "../images/hardware/img2.png",
-          "../images/hardware/img3.png",
-          "../images/hardware/img4.png"
+          "/images/hardware/img1.webp",
+          "/images/hardware/img2.png",
+          "/images/hardware/img3.png",
+          "/images/hardware/img4.png"
         ],
         highlights: [
           "Developed a ROS2-based controller running locally across multiple agents on FireBird VI robotic hardware.",
@@ -52,10 +52,10 @@ export const projectCategories = [
         role: "Core Developer. Created ROS2 wrapper nodes, managed coordinate transform frames (TF2), and optimized image transport pipelines.",
         stack: ["ROS2", "ORB-SLAM2", "C++", "OpenCV", "RGB-D / Mono Cameras", "TF2 Listener"],
         images: [
-          "../images/orb-slam2/img1.png",
-          "../images/orb-slam2/img2.png",
-          "../images/orb-slam2/img3.png",
-          "../images/orb-slam2/img4.png"
+          "/images/orb-slam2/img1.png",
+          "/images/orb-slam2/img2.png",
+          "/images/orb-slam2/img3.png",
+          "/images/orb-slam2/img4.png"
         ],
         highlights: [
           "Wrapped C++ ORB-SLAM2 library into ROS2 lifecycle nodes, processing depth and color camera topics in real-time.",
@@ -72,7 +72,7 @@ export const projectCategories = [
         role: "Primary Autonomy Developer. Modeled physics environments, solved inverse kinematics, and configured path planning.",
         stack: ["ROS/ROS2", "Nav2", "PyBullet", "MuJoCo", "Inverse Kinematics", "Motion Planning", "MoveIt"],
         images: [
-          "../images/6dof/img1.png"
+          "/images/6dof/img1.png"
         ],
         highlights: [
           "Built full physical simulations in PyBullet and MuJoCo with randomly initialized targets and complex obstacles.",
@@ -97,8 +97,8 @@ export const projectCategories = [
         role: "Graphics & Deep Learning Developer. Structured the 3DGS pipeline, optimized rasterization speed, and mapped bounds to simulation engines.",
         stack: ["Python", "PyTorch", "3D Gaussian Splatting", "Computer Vision", "Structure from Motion (Colmap)", "NeRF"],
         images: [
-          "../images/3dgs/img1.png",
-          "../images/3dgs/img2.png"
+          "/images/3dgs/img1.png",
+          "/images/3dgs/img2.png"
         ],
         highlights: [
           "Reconstructed highly traversable 3D scenes from monocular video footage, retaining photorealistic reflection and lighting details.",
@@ -115,19 +115,19 @@ export const projectCategories = [
         role: "Full-Stack Developer. Designed the database schema, engineered the FastAPI backend, and built the React frontend.",
         stack: ["React", "FastAPI", "PostgreSQL", "JWT Auth", "Python", "TailwindCSS", "Gemini API"],
         images: [
-          "../images/ascend/img1.png",
-          "../images/ascend/img2.png",
-          "../images/ascend/img3.png",
-          "../images/ascend/img4.png",
-          "../images/ascend/img5.png",
-          "../images/ascend/img6.png",
-          "../images/ascend/img7.png",
-          "../images/ascend/img8.png",
-          "../images/ascend/img9.png",
-          "../images/ascend/img10.png",
-          "../images/ascend/img11.png",
-          "../images/ascend/img12.png",
-          "../images/ascend/img13.png"
+          "/images/ascend/img1.png",
+          "/images/ascend/img2.png",
+          "/images/ascend/img3.png",
+          "/images/ascend/img4.png",
+          "/images/ascend/img5.png",
+          "/images/ascend/img6.png",
+          "/images/ascend/img7.png",
+          "/images/ascend/img8.png",
+          "/images/ascend/img9.png",
+          "/images/ascend/img10.png",
+          "/images/ascend/img11.png",
+          "/images/ascend/img12.png",
+          "/images/ascend/img13.png"
         ],
         highlights: [
           "Programmed a gamified daily quest generator using the Gemini API to analyze user metrics and recommend personalized habits.",
@@ -145,10 +145,10 @@ export const projectCategories = [
         role: "AI Engineer. Structured the state machine, built loop routes, and implemented grading evaluation nodes.",
         stack: ["Python", "LangGraph", "LangChain", "OpenAI / Gemini API", "ChromaDB Vector DB", "Structured Output Grading"],
         images: [
-          "../images/rag/img1.png",
-          "../images/rag/img2.png",
-          "../images/rag/img3.png",
-          "../images/rag/img4.png"
+          "/images/rag/img1.png",
+          "/images/rag/img2.png",
+          "/images/rag/img3.png",
+          "/images/rag/img4.png"
         ],
         highlights: [
           "Developed a multi-agent state graph where outputs are continuously evaluated by self-checking grading nodes.",
@@ -209,9 +209,9 @@ export const projectCategories = [
         role: "Fabrication Intern at National Tsing Hua University (NTHU), Taiwan.",
         stack: ["Cleanroom Operations (Class 100/1000)", "Photolithography", "Dry/Wet Etching", "Thin Film Deposition (PVD/CVD)"],
         images: [
-          "../images/nthu/img1.jpg",
-          "../images/nthu/img2.jpg",
-          "../images/nthu/img3.jpg"
+          "/images/nthu/img1.jpg",
+          "/images/nthu/img2.jpg",
+          "/images/nthu/img3.jpg"
         ],
         highlights: [
           "Successfully fabricated multi-layer test patterns on a silicon wafer under strict cleanroom industrial protocols.",
@@ -228,10 +228,10 @@ export const projectCategories = [
         role: "Research Intern under Indo-Taiwan SPARC Collaboration.",
         stack: ["Resistive Gas Sensors", "10-Micrometer Semiconductor Lithography", "Etching & Sputtering", "Device Physics Analysis"],
         images: [
-          "../images/iith/img1.jpg",
-          "../images/iith/img2.png",
-          "../images/iith/img3.jpg",
-          "../images/iith/img4.jpg"
+          "/images/iith/img1.jpg",
+          "/images/iith/img2.png",
+          "/images/iith/img3.jpg",
+          "/images/iith/img4.jpg"
         ],
         highlights: [
           "Successfully fabricated 10-micrometer multi-layer test patterns on a silicon wafer under strict cleanroom industrial protocols.",
@@ -250,10 +250,10 @@ export const projectCategories = [
         role: "RTL Designer.",
         stack: ["Verilog", "FPGA Fabric", "RTL Design", "Convolution Engines", "Line Buffering"],
         images: [
-          "../images/prewitt/img1.png",
-          "../images/prewitt/img2.png",
-          "../images/prewitt/img3.png",
-          "../images/prewitt/img4.png"
+          "/images/prewitt/img1.png",
+          "/images/prewitt/img2.png",
+          "/images/prewitt/img3.png",
+          "/images/prewitt/img4.png"
         ],
         highlights: [
           "Designed 3x3 line buffers to process stream data from camera sensors on the fly.",

@@ -27,9 +27,9 @@ export const projectCategories = [
         subtitle: "Real Hardware Swarms - FireBird VI",
         period: "Jan 2026 – May 2026",
         github: "https://github.com/Prithvi-R/ros0xrobot",
-        challenge: "Design and implement a decentralized coordination framework to control physical swarm robots without relying on a central server, ensuring collision avoidance and consensus formation.",
+        challenge: "Design and implement a centralized coordination framework to control physical swarm robots, ensuring collision avoidance and consensus formation.",
         role: "Lead Hardware-Software Developer, guided by Dr. Surajit Panja, IIIT Guwahati.",
-        stack: ["ROS2", "Python", "FireBird VI Robots", "Graph Theory", "Decentralized Consensus", "LiDAR/IR sensors"],
+        stack: ["ROS2", "Python", "FireBird VI Robots", "Graph Theory", "Network Consensus", "LiDAR/IR sensors"],
         images: [
           "/images/hardware/img1.webp",
           "/images/hardware/img2.png",
@@ -261,22 +261,22 @@ export const projectCategories = [
           "Optimized resource utilization to fit within low-power FPGA architectures while running at 100MHz clock frequencies."
         ]
       },
-      // {
-      //   id: "systolic-array",
-      //   title: "2x2 Systolic Array Hardware Accelerator",
-      //   subtitle: "Matrix Multiplication Accelerator",
-      //   period: "Completed Recently",
-      //   challenge: "Design a high-throughput, parallel matrix multiplication hardware accelerator in Verilog, optimizing data reuse and reducing bus-bottleneck latencies.",
-      //   role: "RTL Design & Simulation Engineer.",
-      //   stack: ["Verilog", "FPGA Architecture", "Xilinx Vivado", "ModelSim Simulation", "Dataflow Architectures"],
-      //   images: [
-      //   ],
-      //   highlights: [
-      //     "Modeled processing elements (PEs) containing local multiply-accumulate (MAC) arithmetic logic units.",
-      //     "Pipelined inputs to flow from top and left boundaries, completing matrix products with O(N) time complexity.",
-      //     "Validated timing waveforms and cell placement constraints using Xilinx Vivado, ensuring hazard-free data execution."
-      //   ]
-      // },
+      {
+        id: "systolic-array",
+        title: "2x2 Systolic Array Hardware Accelerator",
+        subtitle: "Matrix Multiplication Accelerator",
+        period: "Completed Recently",
+        challenge: "Design a high-throughput, parallel matrix multiplication hardware accelerator in Verilog, optimizing data reuse and reducing bus-bottleneck latencies.",
+        role: "RTL Design & Simulation Engineer.",
+        stack: ["Verilog", "FPGA Architecture", "Xilinx Vivado", "ModelSim Simulation", "Dataflow Architectures"],
+        images: [
+        ],
+        highlights: [
+          "Modeled processing elements (PEs) containing local multiply-accumulate (MAC) arithmetic logic units.",
+          "Pipelined inputs to flow from top and left boundaries, completing matrix products with O(N) time complexity.",
+          "Validated timing waveforms and cell placement constraints using Xilinx Vivado, ensuring hazard-free data execution."
+        ]
+      }
       // {
       //   id: "spectrophotometer",
       //   title: "Portable Spectrophotometer for Turmeric Adulteration",

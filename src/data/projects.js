@@ -1,11 +1,196 @@
 export const projectCategories = [
   {
+    id: "software",
+    title: "Software Development & AI",
+    accentColor: "#8a95d7", // Muted Indigo/Lavender
+    resumeName: "resume_prithvi.pdf",
+    resumePath: "/resume/resume_prithvi_back.pdf",
+    projects: [
+      {
+        "id": "lock-free-queues",
+        "title": "Lock-Free Concurrent Queues (SPSC & MPMC)",
+        "subtitle": "High-Performance Thread-Safe Queues via Explicit Atomic Operations",
+        "period": "Oct 2025 – Nov 2025",
+        "github": "https://github.com/Prithvi-R/lock-free-queues",
+        "challenge": "Build high-performance, contention-free concurrent data structures capable of scaling across multiple threads without lock overhead, thread blocking, or OS-level context switching bottlenecks.",
+        "role": "Systems & Concurrency Engineer",
+        "stack": [
+          "C++",
+          "C++ Atomics",
+          "Multi-threading",
+          "Lock-Free Programming",
+          "Memory Ordering & Barriers",
+          "Concurrency Benchmarking"
+        ],
+        "images": [
+          "/images/lock/img1.png",
+          "/images/lock/img2.png"
+        ],
+        "highlights": [
+          "Designed and benchmarked a zero-allocation SPSC queue and an MPMC queue using explicit atomic operations and fine-grained memory ordering semantics.",
+          "Achieved a 153x speedup over standard mutual exclusion models by eliminating lock contention and context switching overhead."
+        ]
+      },
+      {
+        id: "3dgs-reconstruction",
+        title: "Photorealistic 3D Scene Reconstruction",
+        subtitle: "3D Gaussian Splatting (3DGS) Pipeline",
+        period: "Oct 2025 – Nov 2025",
+        challenge: "Create physics-consistent 3D virtual spaces from standard 2D video sequences to serve as ultra-realistic environments for robot training and path-planning.",
+        role: "Graphics & Deep Learning Developer. Structured the 3DGS pipeline, optimized rasterization speed, and mapped bounds to simulation engines.",
+        stack: ["Python", "PyTorch", "3D Gaussian Splatting", "Computer Vision", "Structure from Motion (Colmap)", "NeRF"],
+        images: [
+          "/images/3dgs/img1.png",
+          "/images/3dgs/img2.png"
+        ],
+        highlights: [
+          "Reconstructed highly traversable 3D scenes from monocular video footage, retaining photorealistic reflection and lighting details.",
+          "Achieved real-time rendering rates by optimizing Gaussian rasterization compared to slower neural radiance fields (NeRF).",
+        ]
+      },
+      {
+        id: "project-ascend",
+        title: "Project Ascend: AI Life Tracker",
+        subtitle: "Gamified Habit Tracker with AI Analysis",
+        period: "July 2025",
+        github: "https://github.com/Prithvi-R/Project-Ascend",
+        challenge: "Design and build a full-featured habit tracking platform that keeps users engaged by converting daily routines into interactive gaming 'quests' with AI-based task allotments.",
+        role: "Full-Stack Developer. Designed the database schema, engineered the FastAPI backend, and built the React frontend.",
+        stack: ["React", "FastAPI", "PostgreSQL", "JWT Auth", "Python", "TailwindCSS", "Gemini API"],
+        images: [
+          "/images/ascend/img1.png",
+          "/images/ascend/img2.png",
+          "/images/ascend/img3.png",
+          "/images/ascend/img4.png",
+          "/images/ascend/img5.png",
+          "/images/ascend/img6.png",
+          "/images/ascend/img7.png",
+          "/images/ascend/img8.png",
+          "/images/ascend/img9.png",
+          "/images/ascend/img10.png",
+          "/images/ascend/img11.png",
+          "/images/ascend/img12.png",
+          "/images/ascend/img13.png"
+        ],
+        highlights: [
+          "Programmed a gamified daily quest generator using the Gemini API to analyze user metrics and recommend personalized habits.",
+          "Built a secure backend using JWT authentication, logging nutrition, exercise, and mood data in a relational PostgreSQL DB.",
+          "Created interactive weekly analytical reports that predict habit drops and suggest recovery steps."
+        ]
+      },
+      {
+        id: "graph-rag",
+        title: "Graph-Based Self-Correction RAG Pipeline",
+        subtitle: "Multi-Node Agentic State Graph",
+        period: "July 2025",
+        github: "https://github.com/Prithvi-R/personal_RAG",
+        challenge: "Build a document retrieval and answering pipeline that eliminates LLM hallucinations and incorrect context retrieval, which are common in standard vector RAG pipelines.",
+        role: "AI Engineer. Structured the state machine, built loop routes, and implemented grading evaluation nodes.",
+        stack: ["Python", "LangGraph", "LangChain", "OpenAI / Gemini API", "ChromaDB Vector DB", "Structured Output Grading"],
+        images: [
+          "/images/rag/img1.png",
+          "/images/rag/img2.png",
+          "/images/rag/img3.png",
+          "/images/rag/img4.png"
+        ],
+        highlights: [
+          "Developed a multi-agent state graph where outputs are continuously evaluated by self-checking grading nodes.",
+          "Implemented a loop route that automatically refines query searches or rewrites prompts if the generator output is hallucinated.",
+          "Achieved a 95% reduction in irrelevant answers by validating retrieved documents against queries before drafting responses."
+        ]
+      },
+      {
+        "id": "rooundUP",
+        "title": "RoundUPX: Microservices Financial Savings Platform",
+        "subtitle": "Scalable Automated Micro-Investing & Savings Engine",
+        "period": "Mar 2025 – Apr 2025",
+        "github": "https://github.com/roundupx",
+        "challenge": "Architect a resilient, high-throughput microservices backend to handle automated micro-investing, transaction round-ups, and secure third-party payment gateway integrations with fault tolerance.",
+        "role": "Backend & Distributed Systems Engineer",
+        "stack": [
+          "Go",
+          "RESTful APIs",
+          "Idempotency & Retries",
+          "Background Jobs",
+          "CI/CD Pipelines",
+          "Microservices",
+          "Distributed Tracing"
+        ],
+        "images": [
+          "https://images.unsplash.com/photo-1629654297299-c8506221ca97?auto=format&fit=crop&w=800&q=80"
+        ],
+        "highlights": [
+          "Integrated third-party payment APIs, implementing idempotency keys, exponential backoff retries, and transactional reconciliation logic to reliably manage webhook callbacks and edge-case status codes.",
+          "Instrumented structured logging and distributed tracing patterns across endpoints to streamline production debugging, partner response verification, and metric tracking."
+        ]
+      },
+      {
+        "id": "coverup",
+        "title": "Low-Latency Multimodal Desktop Assistant",
+        "subtitle": "Stealth Window Overlay & Telemetry Bypass Utility",
+        "period": "May 2024 – June 2024",
+        "github": "https://github.com/Prithvi-R/coverup",
+        "challenge": "Engineer a native low-latency utility capable of rendering secure auxiliary interfaces and transparent overlays while evading strict window monitoring and telemetry checks.",
+        "role": "Systems Software Engineer",
+        "stack": [
+          "C++",
+          "Win32 API",
+          "Windows OS Internals",
+          "Graphics Hooking",
+          "Process Injection",
+          "Window Handles (HWND)",
+          "GDI+"
+        ],
+        "images": [
+          "/images/roundup/img1.png",
+          "/images/roundup/img2.png",
+          "/images/roundup/img3.png",
+          "/images/roundup/img4.png",
+        ],
+        "highlights": [
+          "Engineered a lightweight, native C++ system utility utilizing Win32 API and GDI+ to capture screen buffers and audio streams for real-time multimodal inference.",
+          "Designed an asynchronous multithreaded network worker using atomic queues and thread pools, achieving non-blocking API dispatch and zero UI frame drops."
+        ]
+      },
+    ]
+  },
+  {
     id: "robotics",
     title: "Robotics & Autonomy",
     accentColor: "#5c90b0", // Muted Steel Blue
     resumeName: "Resume_Prithvi_Robo.pdf",
     resumePath: "/resume/Resume_Prithvi_Robo.pdf",
     projects: [
+      {
+        "id": "snake-robotics",
+        "title": "Modular Snake Robot Platform",
+        "subtitle": "Hyper-Redundant Kinematics & Serpentine Locomotion Control",
+        "period": "Ongoing",
+        // "github": "https://github.com/Prithvi-R/snake-robotics",
+        "challenge": "Design and implement locomotion algorithms and kinematic controllers for a multi-link snake robot to navigate unstructured environments and tight spaces using gait modulation.",
+        "role": "Robotics & Controls Engineer",
+        "stack": [
+          "C++",
+          "Python",
+          "ROS 2",
+          "Serpentine Kinematics",
+          "Gait Control Algorithms",
+          "Embedded Systems",
+          "Gazebo"
+        ],
+        "images": [
+          "/images/snake/img1.png",
+          "/images/snake/img2.png",
+          "/images/snake/img3.png",
+          "/images/snake/img4.png",
+          "/images/snake/img5.png",
+        ],
+        "highlights": [
+          "Implemented biological serpentine locomotion gaits (lateral undulation and sidewinding) using parameterized sine-wave control functions across multi-joint serial manipulators.",
+          "Simulated dynamic obstacle traversal and joint-angle trajectories in ROS 2/Gazebo, verifying real-time embedded motor control feedback loops.",
+          "Still In Progress"
+        ]
+      },
       {
         id: "a2rl-f1",
         title: "Autonomous F1 Race Car (Just Started)",
@@ -82,123 +267,11 @@ export const projectCategories = [
     ]
   },
   {
-    id: "software",
-    title: "Software Development & AI",
-    accentColor: "#8a95d7", // Muted Indigo/Lavender
-    resumeName: "resume_prithvi.pdf",
-    resumePath: "/resume/resume_prithvi.pdf",
-    projects: [
-      {
-        id: "3dgs-reconstruction",
-        title: "Photorealistic 3D Scene Reconstruction",
-        subtitle: "3D Gaussian Splatting (3DGS) Pipeline",
-        period: "Oct 2025 – Nov 2025",
-        challenge: "Create physics-consistent 3D virtual spaces from standard 2D video sequences to serve as ultra-realistic environments for robot training and path-planning.",
-        role: "Graphics & Deep Learning Developer. Structured the 3DGS pipeline, optimized rasterization speed, and mapped bounds to simulation engines.",
-        stack: ["Python", "PyTorch", "3D Gaussian Splatting", "Computer Vision", "Structure from Motion (Colmap)", "NeRF"],
-        images: [
-          "/images/3dgs/img1.png",
-          "/images/3dgs/img2.png"
-        ],
-        highlights: [
-          "Reconstructed highly traversable 3D scenes from monocular video footage, retaining photorealistic reflection and lighting details.",
-          "Achieved real-time rendering rates by optimizing Gaussian rasterization compared to slower neural radiance fields (NeRF).",
-        ]
-      },
-      {
-        id: "project-ascend",
-        title: "Project Ascend: AI Life Tracker",
-        subtitle: "Gamified Habit Tracker with AI Analysis",
-        period: "July 2025",
-        github: "https://github.com/Prithvi-R/Project-Ascend",
-        challenge: "Design and build a full-featured habit tracking platform that keeps users engaged by converting daily routines into interactive gaming 'quests' with AI-based task allotments.",
-        role: "Full-Stack Developer. Designed the database schema, engineered the FastAPI backend, and built the React frontend.",
-        stack: ["React", "FastAPI", "PostgreSQL", "JWT Auth", "Python", "TailwindCSS", "Gemini API"],
-        images: [
-          "/images/ascend/img1.png",
-          "/images/ascend/img2.png",
-          "/images/ascend/img3.png",
-          "/images/ascend/img4.png",
-          "/images/ascend/img5.png",
-          "/images/ascend/img6.png",
-          "/images/ascend/img7.png",
-          "/images/ascend/img8.png",
-          "/images/ascend/img9.png",
-          "/images/ascend/img10.png",
-          "/images/ascend/img11.png",
-          "/images/ascend/img12.png",
-          "/images/ascend/img13.png"
-        ],
-        highlights: [
-          "Programmed a gamified daily quest generator using the Gemini API to analyze user metrics and recommend personalized habits.",
-          "Built a secure backend using JWT authentication, logging nutrition, exercise, and mood data in a relational PostgreSQL DB.",
-          "Created interactive weekly analytical reports that predict habit drops and suggest recovery steps."
-        ]
-      },
-      {
-        id: "graph-rag",
-        title: "Graph-Based Self-Correction RAG Pipeline",
-        subtitle: "Multi-Node Agentic State Graph",
-        period: "Completed Recently",
-        github: "https://github.com/Prithvi-R/personal_RAG",
-        challenge: "Build a document retrieval and answering pipeline that eliminates LLM hallucinations and incorrect context retrieval, which are common in standard vector RAG pipelines.",
-        role: "AI Engineer. Structured the state machine, built loop routes, and implemented grading evaluation nodes.",
-        stack: ["Python", "LangGraph", "LangChain", "OpenAI / Gemini API", "ChromaDB Vector DB", "Structured Output Grading"],
-        images: [
-          "/images/rag/img1.png",
-          "/images/rag/img2.png",
-          "/images/rag/img3.png",
-          "/images/rag/img4.png"
-        ],
-        highlights: [
-          "Developed a multi-agent state graph where outputs are continuously evaluated by self-checking grading nodes.",
-          "Implemented a loop route that automatically refines query searches or rewrites prompts if the generator output is hallucinated.",
-          "Achieved a 95% reduction in irrelevant answers by validating retrieved documents against queries before drafting responses."
-        ]
-      },
-      {
-        id: "stealth-overlay",
-        title: "Win32 Stealth Desktop overlay & Assistant",
-        subtitle: "Bypass telemetry and proctoring software",
-        period: "Mar 2024 – Dec 2024",
-        // github: "https://github.com/Prithvi-R/stealth-overlay",
-        challenge: "Engineer a utility capable of displaying screen overlays (e.g. documentation, tools) completely hidden from screen recording, RDP, proctoring software, and system telemetry checks.",
-        role: "System Programmer. Wrote the stealth overlay client in C++ using direct Win32 APIs and kernel-level window flags.",
-        stack: ["C++", "Win32 API", "Windows OS Internals", "Graphics Hooking", "Process Injection", "Window Handles (HWND)"],
-        images: [
-          "https://images.unsplash.com/photo-1607799279861-4dd421887fb3?auto=format&fit=crop&w=800&q=80"
-        ],
-        highlights: [
-          "Utilized low-level global system hooks (WH_KEYBOARD_LL) to intercept system-level keys and trigger stealth actions.",
-          "Manipulated HWND window flags (WS_EX_TOOLWINDOW, WS_EX_LAYERED) and graphic composition bypasses to make overlays invisible to screen capture APIs.",
-          "Decoupled the process thread from system handles, preventing detection by anti-cheat and proctoring screen-mirroring hooks."
-        ]
-      },
-      // {
-      //   id: "terminal-portfolio",
-      //   title: "Terminal-Based Portfolio CLI",
-      //   subtitle: "Interactive CLI Resume with Q&A System",
-      //   period: "July 2025",
-      //   challenge: "Build a unique, retro terminal portfolio allowing recruiters to query credentials using a shell interface, maintaining instant response speeds and high keyword accuracy.",
-      //   role: "Developer. Designed the CLI UI and wrote the custom text matching algorithm.",
-      //   stack: ["React.js", "CSS3", "JavaScript", "Custom Parsing Algorithms"],
-      //   images: [
-      //     "https://images.unsplash.com/photo-1629654297299-c8506221ca97?auto=format&fit=crop&w=800&q=80",
-      //   ],
-      //   highlights: [
-      //     "Orchestrated a fully interactive terminal-themed portfolio page supporting custom command triggers (help, resume, projects, skills).",
-      //     "Built a lightweight, client-side response-ranking algorithm matching queries to sections of the resume.",
-      //     "Implemented smooth cursor typing animations, command history features, and custom themes (Cyberpunk, Matrix, Classic)."
-      //   ]
-      // }
-    ]
-  },
-  {
     id: "fpga",
     title: "FPGA, Firmware & Semiconductor Fabrication",
     accentColor: "#c87a53", // Muted Copper/Terracotta
     resumeName: "resume_prithvi.pdf",
-    resumePath: "/resume/resume_prithvi.pdf",
+    resumePath: "/resume/resume_prithvi_lock_.pdf",
     projects: [
       {
         id: "nthu-taiwan",

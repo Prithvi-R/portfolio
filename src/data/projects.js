@@ -4,8 +4,36 @@ export const projectCategories = [
     title: "Software Development & AI",
     accentColor: "#8a95d7", // Muted Indigo/Lavender
     resumeName: "resume_prithvi.pdf",
-    resumePath: "/resume/resume_prithvi_back.pdf",
+    resumePath: "/resume/resume_prithvi_backend.pdf",
+    resumePath: "/resume/resume_prithvi_lo_.pdf",
     projects: [
+      {
+        "id": "distributed-event-platform",
+        "title": "Distributed Event-Driven Microservices Platform",
+        "subtitle": "Scalable Microservices Architecture with Apache Kafka & Resilience Patterns",
+        "period": "Jun 2026 – Present",
+        "github": "https://github.com/Prithvi-R/",
+        "challenge": "Architect a resilient, high-throughput distributed system capable of handling asynchronous event streams, fault tolerance, and traffic spikes without degrading database performance.",
+        "role": "Distributed Systems Engineer",
+        "stack": [
+          "Java",
+          "Spring Boot",
+          "Spring Cloud Gateway",
+          "Apache Kafka",
+          "Redis",
+          "Resilience4j",
+          "Docker",
+          "Microservices"
+        ],
+        "images": [
+          "/images/distributed/img1.png",
+          "/images/distributed/img2.png"
+        ],
+        "highlights": [
+          "Architected a distributed event-driven microservices platform using Kafka, configuring isolated consumer groups and dead-letter queues (DLQ) for robust, idempotent processing.",
+          "Implemented Spring Cloud Gateway with Redis-backed rate limiting, Resilience4j circuit breakers, and multi-layer caching to optimize database read throughput under peak load."
+        ]
+      },
       {
         "id": "lock-free-queues",
         "title": "Lock-Free Concurrent Queues (SPSC & MPMC)",
@@ -117,7 +145,10 @@ export const projectCategories = [
           "Distributed Tracing"
         ],
         "images": [
-          "https://images.unsplash.com/photo-1629654297299-c8506221ca97?auto=format&fit=crop&w=800&q=80"
+          "/images/roundup/img1.png",
+          "/images/roundup/img2.png",
+          "/images/roundup/img3.png",
+          "/images/roundup/img4.png",
         ],
         "highlights": [
           "Integrated third-party payment APIs, implementing idempotency keys, exponential backoff retries, and transactional reconciliation logic to reliably manage webhook callbacks and edge-case status codes.",
@@ -142,10 +173,7 @@ export const projectCategories = [
           "GDI+"
         ],
         "images": [
-          "/images/roundup/img1.png",
-          "/images/roundup/img2.png",
-          "/images/roundup/img3.png",
-          "/images/roundup/img4.png",
+          "https://images.unsplash.com/photo-1629654297299-c8506221ca97?auto=format&fit=crop&w=800&q=80"
         ],
         "highlights": [
           "Engineered a lightweight, native C++ system utility utilizing Win32 API and GDI+ to capture screen buffers and audio streams for real-time multimodal inference.",
@@ -271,7 +299,7 @@ export const projectCategories = [
     title: "FPGA, Firmware & Semiconductor Fabrication",
     accentColor: "#c87a53", // Muted Copper/Terracotta
     resumeName: "resume_prithvi.pdf",
-    resumePath: "/resume/resume_prithvi_lock_.pdf",
+    resumePath: "/resume/resume_prithvi_fab.pdf",
     projects: [
       {
         id: "nthu-taiwan",

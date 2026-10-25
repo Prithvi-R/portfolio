@@ -5,14 +5,14 @@ export const projectCategories = [
     accentColor: "#8a95d7", // Muted Indigo/Lavender
     resumeName: "resume_prithvi.pdf",
     resumePath: "/resume/resume_prithvi_backend.pdf",
-    resumePath: "/resume/resume_prithvi_lo_.pdf",
+    // resumePath: "/resume/resume_prithvi_lo_.pdf",
     projects: [
       {
         "id": "distributed-event-platform",
         "title": "Distributed Event-Driven Microservices Platform",
         "subtitle": "Scalable Microservices Architecture with Apache Kafka & Resilience Patterns",
         "period": "Jun 2026 – Present",
-        "github": "https://github.com/Prithvi-R/",
+        "github": "https://github.com/Prithvi-R/event-driven-microservices",
         "challenge": "Architect a resilient, high-throughput distributed system capable of handling asynchronous event streams, fault tolerance, and traffic spikes without degrading database performance.",
         "role": "Distributed Systems Engineer",
         "stack": [
@@ -27,7 +27,8 @@ export const projectCategories = [
         ],
         "images": [
           "/images/distributed/img1.png",
-          "/images/distributed/img2.png"
+          "/images/distributed/img2.png",
+          "/images/distributed/img3.png"
         ],
         "highlights": [
           "Architected a distributed event-driven microservices platform using Kafka, configuring isolated consumer groups and dead-letter queues (DLQ) for robust, idempotent processing.",
@@ -110,7 +111,7 @@ export const projectCategories = [
         id: "graph-rag",
         title: "Graph-Based Self-Correction RAG Pipeline",
         subtitle: "Multi-Node Agentic State Graph",
-        period: "July 2025",
+        period: "June 2025",
         github: "https://github.com/Prithvi-R/personal_RAG",
         challenge: "Build a document retrieval and answering pipeline that eliminates LLM hallucinations and incorrect context retrieval, which are common in standard vector RAG pipelines.",
         role: "AI Engineer. Structured the state machine, built loop routes, and implemented grading evaluation nodes.",
